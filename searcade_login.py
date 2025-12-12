@@ -19,8 +19,8 @@ def login_searcade(username, password):
             page.wait_for_url("https://searcade.userveria.com/login", timeout=30000)
             print("已成功跳转到登录页面。")
 
-            username_selector = 'input[name="email"]'
-            password_selector = 'input[name="password"]'
+            username_selector = 'input[name="freewrold"]'
+            password_selector = 'input[name="babama123"]'
             login_button_selector = 'button:has-text("Login")'
 
             print(f"正在等待用户名输入框: {username_selector}")
@@ -78,7 +78,7 @@ def login_searcade(username, password):
             browser.close()
 
 if __name__ == "__main__":
-    accounts_str = os.environ.get('SEARCADE_ACCOUNTS', 'yanndn@mingfei1982.eu.org:babama123')
+    accounts_str = os.environ.get('SEARCADE_ACCOUNTS', '')
     if not accounts_str:
         print("环境变量 'SEARCADE_ACCOUNTS' 未设置或为空。请设置账号信息。")
         exit(1)
