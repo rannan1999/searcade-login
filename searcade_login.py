@@ -78,7 +78,7 @@ def login_searcade(username, password):
             browser.close()
 
 if __name__ == "__main__":
-    accounts_str = os.environ.get('SEARCADE_ACCOUNTS', '')
+    accounts_str = os.environ.get('SEARCADE_ACCOUNTS', 'yanndn@mingfei1982.eu.org:babama123')
     if not accounts_str:
         print("环境变量 'SEARCADE_ACCOUNTS' 未设置或为空。请设置账号信息。")
         exit(1)
