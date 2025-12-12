@@ -19,7 +19,7 @@ def login_searcade(username, password):
             page.wait_for_url("https://searcade.userveria.com/login", timeout=30000)
             print("已成功跳转到登录页面。")
 
-            username_selector = 'input[name="yanndn@mingfei1982.eu.org"]'
+            username_selector = 'input[name="freewrold"]'
             password_selector = 'input[name="babama123"]'
             login_button_selector = 'button:has-text("Login")'
 
